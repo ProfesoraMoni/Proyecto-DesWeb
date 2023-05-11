@@ -1,0 +1,12 @@
+body{
+    margin:0;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background:no-repeat url("./assets/img/chimuelo-y-furia-luminosa_5120x2880_xtrafondos.com\ \(1\).jpg")
+}
