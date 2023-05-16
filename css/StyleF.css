@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     background-image: url(fondo\ form.png);
@@ -6,12 +7,100 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-.container {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    backdrop-filter: blur (1px);
+header{
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #FFF;
+    background-color: rgb(33, 49, 98);
 }
-.filter{
-
-    
+.logo{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.logo img{
+    height: 100px;
+}
+a{
+    display: flex;
+    font-family: Georgia;
+    color: #FFF;
+    font-size: medium;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.text{
+margin-left:10px;
+font-size: 20px;
+color: rgb(15, 32, 82);
+display: flex;
+}
+.container{
+    margin-top: 20px;
+}
+.container .form {
+    background: rgba(0,0,0,.6);
+    max-width: 450px;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    margin: auto;
+}
+.container .form .form-label {
+    color: #FFF;
+    display: flex;
+    font-size: 20px;
+    font-family: Roboto;
+    position: relative;
+}
+.container .form .form-input, .form-textarea {
+    background: rgba(10, 37, 67, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #4a81d4;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2px;
+    border-radius: 50px;
+    font-size: 14px;
+    color:#FFF;
+    font-family: Roboto;
+}
+.container .form .button{
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: #4a81d4;
+    font-size: 20px;
+    border: none;
+    color: #FFF;
+    padding: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 2px;
+    border-radius: 50px;
+}
+.container .form .button:hover {
+background:#2863bb ;
+}
+.container .form .opt {
+    width: 100%;
+    font-family: Roboto;
+    background: #4a81d4;
+    font-size: 16px;
+    border: none;
+    color: #FFF;
+    padding: 15px 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2px;
+    border-radius: 50px;
+}
+.final{
+    margin-left: 50px;
+    justify-content: center;
 }
