@@ -1,19 +1,9 @@
 body{
     margin: 0;
-}
-@media screen and (min-width: 480px) and (max-width: 768px){
-    .navbar{
-        background-color: aqua;
-        width: 100%;
-        height: 10vh;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width:1440px) {
-    .navbar{
-       background-color: blueviolet; 
-       width: 100%;
-       height: 10vh;
-    }
-    
+    background-image: url(5\ Whys\ DAM.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
 }
