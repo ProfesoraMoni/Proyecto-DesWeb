@@ -21,11 +21,35 @@
         </ul>
     </header>
     <section>
-        <img src="stars.png" id="stars">
-        <img src="static.png" id="static">
-        <img src="behind.png" id="behind">
-        <img src="forest_front.png" id="forest_front">
+        <img src="./css/stars.png" id="stars">
+        <img src="./css/static.png" id="static">
+        <img src="./css/behind.png" id="behind">
+        <img src="./css/forest_front.png" id="forest_front">
 
     </section>
+    <div class="sec" id="sec">
+        <h2>Sabias que...</h2>
+        <p>1. Los colombianos no conocen su riqueza en biodiversidad.<br><br></p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let static = document.getElementById('static');
+        let behind = document.getElementById('behind');
+        let forest_front = document.getElementById('forest_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value =window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            static.style.top = value * 0 + 'px';
+            behind.style.marginRight = value * 1.5 + 'px';
+            forest_front.style.top = value * 0 + 'px';
+            header.style.top =value * 0.5 + 'px';
+            behind.style.marginTop = value * 1.5 + 'px';
+
+
+        })
+
+    </script>
 </body>
 </html>
