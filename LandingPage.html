@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/LandingPage/StyleLP.css">
     <title>DiverColombia</title> <!--Titulo de la página-->
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">DiverColombia</a>
@@ -28,8 +29,13 @@
 
     </section>
     <div class="sec" id="sec">
-        <h2>Sabias que...</h2>
-        <p>1. Los colombianos no conocen su riqueza en biodiversidad.<br><br></p>
+        <p1><h2>Sabias que...</h2>
+            1. Los colombianos no reconocen la riqueza de su pais en biodiversidad<br>
+            <p2>2. Colombia tiene una gran biodiversidad gracias a que está ubicada en el tropico.<br></p2>
+            <p3>3. Colombia es primera en Aves y Orquideas.<br></p3>
+        </p1>
+        <img class="imagen" src="./css/Biodiversidad.png">
+
     </div>
     <script>
         let stars = document.getElementById('stars');
@@ -42,11 +48,9 @@
             let value =window.scrollY;
             stars.style.left = value * 0.25 + 'px';
             static.style.top = value * 0 + 'px';
-            behind.style.marginRight = value * 1.5 + 'px';
             forest_front.style.top = value * 0 + 'px';
             header.style.top =value * 0.5 + 'px';
             behind.style.marginTop = value * 1.5 + 'px';
-
 
         })
 

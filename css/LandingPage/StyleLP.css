@@ -1,24 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
-{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-}
+
 body{
-    min-height: 100hv;
+    min-height: 30hv;
     background: #efcead;
     font-family: 'Righteous';
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 header{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 2px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +24,6 @@ header .logo{
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
-    letter-spacing: 2px;
 }
 header ul{
 display: flex;
@@ -90,16 +84,31 @@ section img#behind{
     white-space: nowrap;
 }
 .sec{
+    display: flex;
     position: relative;
     padding: 100px;
     background:#efcead ;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 .sec h2{
-    font-size: 3.5em;
-    margin-bottom: 10px;
+    font-size:40px;
     color: brown;
 }
-.sec p{
-    font-size: 1em;
+.sec p1{
+    font-size:30px;
     color:rgb(30, 106, 63);
+}
+.sec p2{
+    font-size:30px;
+    color:rgb(30, 77, 106);
+}
+.sec p3{
+    font-size:30px;
+    color:rgb(58, 30, 106);
+}
+.imagen{
+    width: 350px;
+    height: 250px;
 }
