@@ -11,49 +11,27 @@
 </head>
 
 <body>
-    <header>
-        <img src="./css/logo.png" alt="logo">
-        <ul>
-            <li><a href="#" class="active">Inicio</a></li>
-            <li><a href="https://www.linkedin.com/in/moniantolinez9b4989147/#">Sobre mi</a></li>
-            <li><a href="http://127.0.0.1:5500/Why.html#">¿Porqué?</a></li>
-            <li><a href="http://127.0.0.1:5500/Forms.html#">Registrarse</a></li>
-        </ul>
-    </header>
-    <main>
-        <section>
-            <img src="./css/stars.png" id="stars">
-            <img src="./css/static.png" id="static">
-            <img src="./css/behind.png" id="behind">
-            <img src="./css/forest_front.png" id="forest_front">
+    <section>
+        <header>
+            <img src="./css/logo.png" alt="logo">
+            <nav class="navigation">
+                <a href="#" class="active">Inicio</a>
+                <a href="https://www.linkedin.com/in/moniantolinez9b4989147/#">Sobre mi</a>
+                <a href="http://127.0.0.1:5500/Why.html#">¿Porqué?</a>
+                <a href="http://127.0.0.1:5500/Forms.html#">Registrarse</a>
+            </nav>
+               
+        </header>
+        <main>
     
-        </section>
-        <div class="sec" id="sec">
-            <p1><h2>Sabias que...</h2>
-                1. Los colombianos no reconocen la riqueza de su pais en biodiversidad<br>
-                <p2>2. Colombia tiene una gran biodiversidad gracias a que está ubicada en el tropico.<br></p2>
-                <p3>3. Colombia es primera en Aves y Orquideas.<br></p3>
-            </p1>
-            <img class="imagen" src="./css/Biodiversidad.png">
+        </main>
+        <footer>
     
-        </div>
-        <script>
-            let stars = document.getElementById('stars');
-            let static = document.getElementById('static');
-            let behind = document.getElementById('behind');
-            let forest_front = document.getElementById('forest_front');
-            let header = document.querySelector('header');
+        </footer>
+
+    </section>
+
     
-            window.addEventListener('scroll', function(){
-                let value =window.scrollY;
-                stars.style.left = value * 0.25 + 'px';
-                static.style.top = value * 0 + 'px';
-                forest_front.style.top = value * 0 + 'px';
-                header.style.top =value * 0.5 + 'px';
-                behind.style.marginTop = value * 1.5 + 'px';
-            })
-        </script>
-    </main>
 
 </body>
 </html>
