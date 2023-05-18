@@ -1,22 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
 
 body{
     margin: 0;
-    background: #efcead;
-    background-size: cover;
+    background:url(./fondo.png) ;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Righteous';
 }
 header{
     display: flex;
     height: 110px;
     justify-content: space-between;
     font-size: 20px;
-    color: #FFF;
-    background-color: rgb(33, 49, 98);
+    color: brown;
+    font-family: 'Righteous';
+    background-color: #efcead;
 }
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    header ul li{
+        list-style: none;
+        margin-left: 20px;
+    }
+    header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: brown;
+    border-radius: 20px;
+    
+    }
+    header ul li a:hover, 
+    header ul li a.active {
+        background: brown;
+        color: #fff;
+    }
 .logo{
     display: flex;
     margin-top: 5px;
@@ -25,21 +48,16 @@ header{
 .logo img{
     height: 100px;
 }
-a{
-    display: flex;
-    color: #FFF;
-    font-size: medium;
-    margin-top: 20px;
-    margin-right: 50px;
-}
+
 .text{
 margin-left:10px;
-font-size: 20px;
-color: rgb(15, 32, 82);
+font-size: 30px;
+color: #246c38;
 display: flex;
 }
 .container{
     margin-top: 20px;
+    font-family: 'Righteous';
 }
 .container .form {
     background: rgba(0,0,0,.6);
@@ -51,16 +69,16 @@ display: flex;
     margin: auto;
 }
 .container .form .form-label {
-    color: #FFF;
+    color: #efcead;
     display: flex;
     font-size: 20px;
     position: relative;
 }
 .container .form .form-input, .form-textarea {
-    background: rgba(10, 37, 67, 0.7);
+    background: rgb(114, 64, 29);
     border: none;
     outline: none;
-    border-bottom: 3px solid #4a81d4;
+    border-bottom: 3px solid rgb(198, 123, 71);
     width: 100%;
     padding: 10px;
     margin-bottom: 2px;
@@ -71,33 +89,36 @@ display: flex;
 .container .form .button{
     width: 100%;
     outline: none;
-    background: #4a81d4;
+    background: #4ad468;
     font-size: 20px;
     border: none;
-    color: #FFF;
+    color: black;
     padding: 10px;
     cursor: pointer;
     padding: 10px;
     margin-bottom: 2px;
     border-radius: 50px;
+    font-family: 'Righteous';
 }
 .container .form .button:hover {
-background:#2863bb ;
+background:#246c38 ;
 }
 .container .form .opt {
     width: 100%;
-    background: #4a81d4;
+    background: #4ad468;
     font-size: 16px;
     border: none;
-    color: #FFF;
+    color: black;
     padding: 15px 0;
     cursor: pointer;
     text-align: center;
     padding: 10px;
     margin-bottom: 2px;
     border-radius: 50px;
+    font-family: 'Righteous';
 }
-.final{
+footer{
     margin-left: 50px;
     justify-content: center;
+    background-color: #efcead;
 }

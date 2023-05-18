@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
-    min-height: 30hv;
-    background: #efcead;
-    font-family: 'Righteous';
     margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Righteous';
+    background-color: #efcead;
 }
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2px 5px;
     display: flex;
+    height: 110px;
     justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
+    font-size: 20px;
+    color: brown;
+    font-family: 'Righteous';
+    background-color: #efcead;
 }
 header .logo{
     color: brown;
@@ -90,6 +89,7 @@ section img#behind{
     background:#efcead ;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Roboto';
     
 }
 .sec h2{
