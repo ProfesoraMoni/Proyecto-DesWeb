@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    background:url(./5\ Whys\ DAM.png) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Righteous';
+}
+header{
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    font-size: 20px;
+    color: brown;
+    font-family: 'Righteous';
+    background-color: #efcead;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    header ul li{
+        list-style: none;
+        margin-left: 20px;
+    }
+    header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: brown;
+    border-radius: 20px;
+    
+    }
+    header ul li a:hover, 
+    header ul li a.active {
+        background: brown;
+        color: #fff;
+    }
+.logo{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.logo img{
+    height: 100px;
+}
