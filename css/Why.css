@@ -4,10 +4,11 @@
 body{
     margin: 0;
     background:url(./5\ Whys\ DAM.png) ;
-    background-size: 100%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:bottom ;
     background-attachment: fixed;
+    background-color: #fff7e7;
     font-family: 'Righteous';
 }
 header{

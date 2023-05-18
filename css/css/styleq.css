@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    background-image: url(5\ Whys\ DAM.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
