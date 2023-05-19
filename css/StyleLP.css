@@ -51,29 +51,29 @@ header ul li a.active {
     background: #fff;
     color: brown;
 }
-div{
+.media-icons{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
-div a{
+.media-icons a{
     position: relative;
     color: #111;
     font-size: 25px;
     transition: 0.3s;
     transition-property: transform;
 }
-div a:not(:last-child){
+.media-icons a:not(:last-child){
     margin-right: 60px;
 }
-div a:hover{
+.media-icons a:hover{
     transform: scale(1.5);
 }
 label{
     display: none;
 }
-.check{
+#check{
     z-index: 3;
     display: none;
 }
@@ -94,13 +94,13 @@ label{
         color: #fff;
     }
 
-    label close-btn{
+    label .close-btn{
         display: none;
     }
-    .check:checked ~ header .navigation{
+    #check:checked ~ header .navigation{
         z-index: 2;
         position: fixed;
-        background: #8e6b49;
+        background: rgb(142, 107, 73);
         top: 0;
         bottom: 0;
         left: 0;
@@ -110,13 +110,13 @@ label{
         justify-content: center;
         align-items: center;
     }
-    .check:checked ~ header .navigation a{
+    #check:checked ~ header .navigation a{
         font-weight: 700;
         margin-right: 0;
         margin-bottom: 50px;
         letter-spacing: 2px;
     }
-    .check:checked ~ header label .close-btn{
+    #check:checked ~ header label .close-btn{
         z-index: 2;
         display: block;
         position: fixed;
