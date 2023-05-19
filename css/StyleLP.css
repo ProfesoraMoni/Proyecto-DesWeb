@@ -64,15 +64,15 @@ header ul li a.active {
     margin-bottom: 30px;  
 }
 .content h2 span{
-    color: #80430a;
+    color: #0c1358;
     font-size: 50px;
     font-weight: 600;
 }
 .content p{
     font-size: 16px;
     font-weight: 100px;
-    margin-bottom: 40px;
-    margin-right: 300px;
+    color: #fff;
+    background: rgba(142,107,73,0.9);
 }
 
 .media-icons{
@@ -100,6 +100,38 @@ label{
 #check{
     z-index: 3;
     display: none;
+}
+.section h2{
+    text-align: center;
+    margin-top: 50px;
+    color: #11423a;
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;  
+}
+.slider-frame{
+    width:600px;
+    height: auto;
+    overflow: hidden;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame img{
+    width: 100%;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+
 }
 @media (max-width: 960px){
     header .navigation{
@@ -157,15 +189,17 @@ label{
 }
 @media (max-width:560px){
     .content h2{
-        font-size: 35px;
-        line-height: 40px;
+        width: 100%;
+        font-size: 30px;
+        line-height: 20px;
+        fle
     }
     .content h2 span{
         font-size: 30px;
         font-weight: 600;
     }
     .content p{
-        font-size: 14px;
+        font-size: 15px;
     }
 
 
