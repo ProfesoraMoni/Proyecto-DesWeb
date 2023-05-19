@@ -51,3 +51,31 @@ header ul li a.active {
     background: #fff;
     color: brown;
 }
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+div a{
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+div a:not(:last-child){
+    margin-right: 60px;
+}
+div a:hover{
+    transform: scale(1.5);
+}
+label{
+    display: none;
+}
+.check{
+    z-index: 3;
+}
+
+}
+    
