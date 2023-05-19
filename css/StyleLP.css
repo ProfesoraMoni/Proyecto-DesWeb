@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Righteous';
 }
-section{
+body{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -22,16 +22,32 @@ header{
     position: relative;
     top: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 10px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .img{
+header img{
     position: relative;
-    display: flex;
-    margin-top: 5px;
-    margin-left: 5px;
-    height: 5px;
+    height: 150px;
+}
+
+nav a{
+    color: #fff;
+    background:brown ;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+}
+nav a:not(:last-child){
+    margin-right: 10px;
+}
+
+nav a:hover, 
+header ul li a.active {
+    background: #fff;
+    color: brown;
 }
