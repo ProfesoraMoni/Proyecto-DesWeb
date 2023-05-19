@@ -51,6 +51,30 @@ header ul li a.active {
     background: #fff;
     color: brown;
 }
+.content{
+    max-width: 650px;
+    margin: 10px 100px;
+}
+.content h2{
+    color: #11423a;
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;  
+}
+.content h2 span{
+    color: #80430a;
+    font-size: 50px;
+    font-weight: 600;
+}
+.content p{
+    font-size: 16px;
+    font-weight: 100px;
+    margin-bottom: 40px;
+    margin-right: 300px;
+}
+
 .media-icons{
     display: flex;
     justify-content: center;
@@ -132,6 +156,17 @@ label{
     }
 }
 @media (max-width:560px){
+    .content h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .content h2 span{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .content p{
+        font-size: 14px;
+    }
 
 
 
