@@ -4,44 +4,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Righteous';
 }
 body{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: url(./background.png)no-repeat;
-    background-size: cover;
-    background-position: center;
+    font-family: 'Righteous';
 }
-
+.contendor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
 header{
     position: relative;
-    top: 0;
     width: 100%;
-    padding: 10px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 600px;
+    background: url(./background2.png)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-
-header img{
-    position: relative;
+img{
     height: 150px;
+    margin: 10px 10px;
+    float: left;
 }
-
+nav{
+    text-align: right;
+    padding: 50px 50px 0 0;
+}
 nav a{
     color: #fff;
     background:brown ;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
-    padding: 2px 15px;
+    padding: 5px 10px;
     border-radius: 20px;
 }
+
 nav a:not(:last-child){
     margin-right: 10px;
 }
@@ -51,28 +51,46 @@ header ul li a.active {
     background: #fff;
     color: brown;
 }
+label{
+    z-index: 3;
+    display: none;
+}
+label .check{
+    z-index: 3;
+    display: none;
+}
 .content{
     max-width: 650px;
-    margin: 10px 100px;
+    padding: 10px 10px;
 }
 .content h2{
-    color: #11423a;
-    font-size: 55px;
+    color: #eedcc8;
+    font-size: 60px;
     font-weight: 800;
     letter-spacing: 2px;
     line-height: 60px;
     margin-bottom: 30px;  
 }
 .content h2 span{
-    color: #0c1358;
-    font-size: 50px;
+    color: #f19820;
+    font-size: 60px;
+    font-weight: 600;
+}
+.content h2 span1{
+    color: #22408c;
+    font-size: 60px;
+    font-weight: 600;
+}
+.content h2 span2{
+    color: #ce2028;
+    font-size: 60px;
     font-weight: 600;
 }
 .content p{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 100px;
-    color: #fff;
-    background: rgba(142,107,73,0.9);
+    color: black;
+    text-align: justify;
 }
 
 .media-icons{
@@ -94,12 +112,14 @@ header ul li a.active {
 .media-icons a:hover{
     transform: scale(1.5);
 }
-label{
-    display: none;
-}
-#check{
-    z-index: 3;
-    display: none;
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+    background: #f19820;
+    background: url(./5\ Whys\ DAM.png)no-repeat;
+    width: 100%;
 }
 .section h2{
     text-align: center;
@@ -112,15 +132,16 @@ label{
     margin-bottom: 30px;  
 }
 .slider-frame{
-    width:600px;
-    height: auto;
-    overflow: hidden;
-    animation: slide 16s infinite alternate ease-in-out;
+    justify-items: center;
+    width:400px;
+    height: 300px;
+    overflow:hidden;
+    animation: slide 1s infinite alternate ease-in-out;
 }
 .slider-frame ul{
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 700%;
 }
 .slider-frame li{
     list-style: none;
@@ -134,7 +155,14 @@ label{
 
 }
 @media (max-width: 960px){
-    header .navigation{
+    body{ 
+        background: url(./background.png)no-repeat;
+        background-size: cover;
+        width: 90%;
+        display: flex;
+        background-position: center;
+    }
+    header nav{
         display: none;
     }
     label{
@@ -153,7 +181,7 @@ label{
     label .close-btn{
         display: none;
     }
-    #check:checked ~ header .navigation{
+    #check:checked ~ header nav{
         z-index: 2;
         position: fixed;
         background: rgba(142,107,73,0.9);
@@ -166,7 +194,7 @@ label{
         justify-content: center;
         align-items: center;
     }
-    #check:checked ~ header .navigation a{
+    #check:checked ~ header nav a{
         font-weight: 700;
         margin-right: 0;
         margin-bottom: 50px;
@@ -182,27 +210,49 @@ label{
         position: absolute;
     }
 
-    header .logo{
+    header img{
         position: absolute;
         bottom: -6px;
     }
+    .content p{
+        background: rgba(142,107,73,0.5);
+        font-size: 20px;
+    }
 }
 @media (max-width:560px){
+    body{ 
+    background: url(./background.png)no-repeat;
+    background-size: cover;
+    width: 90%;
+    display: flex;
+    background-position: center;
+    }
     .content h2{
-        width: 100%;
-        font-size: 30px;
-        line-height: 20px;
-        fle
+        color: #eedcc8;
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 60px;
+        margin-bottom: 30px;  
     }
     .content h2 span{
-        font-size: 30px;
+        color: #f19820;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .content h2 span1{
+        color: #22408c;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .content h2 span2{
+        color: #ce2028;
+        font-size: 50px;
         font-weight: 600;
     }
     .content p{
-        font-size: 15px;
+        background: rgba(142,107,73,0.5);
+        font-size: 25px;
     }
-
-
-
 }
     
