@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>DiverColombia</title>
     </head>
+    
     <body>
         <input type="checkbox" id="check">
         <header>
@@ -20,46 +21,63 @@
                 <a href="#">¿Porqué?</a>
                 <a href="#">Registrarse</a>
             </nav>
-            <label for="check">
+            <label for="check" class="ind">
                 <i class="fas fa-bars menu-btn"></i>
                 <i class="fas fa-times close-btn"></i>
             </label>
-            <section class="ifini">
-                <h2>Juego Ambiental</h2>
+            <section class="info">
+            <h2>Juego Ambiental</h2>
             <h2><span>Diver</span><span1>Colo</span1><span2>mbia</span2></h2>
             <p>La aplicación DiverColombia nace para aportar a la mitigación de la problemática de pérdida de biodiversidad generada por la manera desmedida en que los seres humanos extraen los recursos naturales y producen desechos, lo que ha acelerado la pérdida irreversible de especies y el deterioro de la vida. En concreto se quiere disminuir falta de alfabetización sobre el tema biodiversidad en Colombia.
             </p>
             </section>
         </header>
         <main>
-            <section class="infog">
-            
+            <img src="./css/5 Whys DAM.png" alt="" class="whys">
+            <section class="contjuego">
+                <ul>
+                    <h2>¿Porqué el juego DiverColombia?</h2>
+                    <li>Es una aplicación de juego educativa.</li>
+                    <li>Su objetivo es fortalecer la alfabetización sobre la biodiversidad de la fauna y flora de Colombia.</li>
+                    <li>Este juego permite a los infantes aprender contenidos y estar motivados al mismo tiempo, lo que puede resultar en actitudes favorables hacia el medioambiente.</li>
+                </ul>
             </section>
         </main>
-    </body>
-    <section class="info">
-        <h2>¿Qué podras encontrar?</h2>
-        <div class="slider-frame">
-            <ul>
-                <li><img src="./css/1.png" alt=""></li>
-                <li><img src="./css/2.png" alt=""></li>
-                <li><img src="./css/3.png" alt=""></li>
-                <li><img src="./css/4.png" alt=""></li>
-                <li><img src="./css/5..png" alt=""></li>
-                <li><img src="./css/7.png" alt=""></li>
-                <li><img src="./css/8.png" alt=""></li>
-            </ul>
-        </div>
-    </section>
+        <section class="slider">
+            <div class="images">
+                <input type="radio" name="slide" id="img1" checked>
+                <input type="radio" name="slide" id="img2">
+                <input type="radio" name="slide" id="img3">
+                <input type="radio" name="slide" id="img4">
+                <input type="radio" name="slide" id="img5">
+                <input type="radio" name="slide" id="img6">
+                <input type="radio" name="slide" id="img7">
 
+                <img src="./css/1.png" class="m1" alt="img1">
+                <img src="./css/2.png" class="m2" alt="img2">
+                <img src="./css/3.png" class="m3" alt="img3">
+                <img src="./css/4.png" class="m4" alt="img4">
+                <img src="./css/5..png" class="m5" alt="img5">
+                <img src="./css/7.png" class="m6" alt="img6">
+                <img src="./css/8.png" class="m7" alt="img7">
+            </div>
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+                <label for="img5"></label>
+                <label for="img6"></label>
+                <label for="img7"></label>
+
+            </div>
+        </section>
+    </body>
     <footer>
         <div class="media-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-
-    
     </footer>
-
 </html>
