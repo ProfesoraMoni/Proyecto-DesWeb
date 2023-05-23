@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Righteous';
+    flex-direction: column;
 }
-header{
+
+header {
     position: relative;
     width: 100%;
     height: 620px;
@@ -16,148 +20,228 @@ header{
     background-size: cover;
     background-attachment: fixed;
 }
-img {
+
+.log {
     height: 150px;
     margin: 10px 10px;
     float: left;
     position: relative;
 }
-nav{
+
+nav {
     text-align: right;
     padding: 50px 50px 0 0;
 }
-nav a{
+
+nav a {
     color: #fff;
-    background:brown ;
+    background: brown;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
     padding: 5px 10px;
     border-radius: 20px;
 }
-nav a:not(:last-child){
+
+nav a:not(:last-child) {
     margin-right: 10px;
 }
-nav a:hover, 
+
+nav a:hover,
 header ul li a.active {
     background: #fff;
     color: brown;
 }
-.media-icons{
+
+.media-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
-.media-icons a{
+
+.media-icons a {
     position: relative;
     color: #111;
     font-size: 25px;
     transition: 0.3s;
     transition-property: transform;
 }
-.media-icons a:not(:last-child){
+
+.media-icons a:not(:last-child) {
     margin-right: 60px;
 }
-.media-icons a:hover{
+
+.media-icons a:hover {
     transform: scale(1.5);
 }
-label .ind{
+
+label {
     display: none;
 }
-#check{
+
+#check {
     z-index: 3;
     display: none;
 }
-header .info{
+
+header .info {
     max-width: 650px;
     padding: 100px 100px;
 }
-header .info h2{
+
+header .info h2 {
     color: #eedcc8;
     font-size: 50px;
     font-weight: 600;
     letter-spacing: 2px;
-    line-height: 70px;  
+    line-height: 70px;
 }
-header .info h2 span{
+
+header .info h2 span {
     color: #f19820;
     font-size: 50px;
     font-weight: 600;
 }
-header .info h2 span1{
+
+header .info h2 span1 {
     color: #22408c;
     font-size: 50px;
     font-weight: 600;
 }
-header .info h2 span2{
+
+header .info h2 span2 {
     color: #ce2028;
     font-size: 50px;
     font-weight: 600;
 }
-header .info p{
+
+header .info p {
     font-size: 20px;
     color: black;
     text-align: justify;
     font-family: Roboto;
 }
-main{
+
+main {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
 }
-main h2{
+
+main h2 {
     color: brown;
     text-align: center;
     font-size: 30px;
     line-height: 40px;
-    margin-top: 38px;
 }
-main .contjuego{
+
+main .contjuego {
     display: flex;
-    background:#eedcc8;
-    border-radius:50px;
+    background: #eedcc8;
+    border-radius: 50px;
 }
-main .whys{
-    width: 60%;
+
+main .whys {
+    width: 70%;
     height: auto;
 }
-main li{
+
+main li {
     margin-left: 40px;
-    margin-right: 20px;
-    margin-top: 30px;
+    margin-right: 40px;
     margin-bottom: 37px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Roboto;
 }
-.slider{
+
+.aboutme {
+    background: url(./b4s.png) no-repeat;
+    background-size: cover;
+    font-family: Roboto;
+    height: 600px;
+    padding-top: 60px;
+    padding-left: 350px;
+}
+
+.box {
+    width: 500px;
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.box-img {
+    border-radius: 50%;
+}
+
+.box h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: 'Righteous';
+    font-weight: 100;
+    margin: 30px 0 20px;
+}
+
+.box h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.box p {
+    text-align: justify;
+    margin: 30px 50px 0 50px;
+}
+
+.slider {
     position: relative;
-    width: 60%;
-    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    background: url(./b2s.png)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider h2 {
+    color: #eedcc8;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 120px;
+}
+
+.images {
     margin-left: 250px;
-}
-.images{
     display: flex;
-    width: 100%;
+    width: 120vh;
+    position: relative;
+    overflow: hidden;
 }
-.images img{
+
+.images img {
     height: 400px;
-    width: 100%;
+    width: auto;
     transition: all 0.15s ease;
 }
-.images input{
+
+.images input {
     display: none;
 }
+
 .dots {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 5px;
 }
-.dots label{
+
+.dots label {
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -166,25 +250,184 @@ main li{
     transition: all 0.15s ease;
     margin: 5px;
 }
-.dots label:hover {background: #111;}
-#img1:checked ~ .m1{
+
+.dots label:hover {
+    background: #111;
+}
+
+#img1:checked~.m1 {
     margin-left: 0;
 }
-#img2:checked ~ .m2 {
-    margin-left: 0;
+
+#img2:checked~.m2 {
+    margin-left: -100%;
 }
-#img3:checked ~ .m3 {
-    margin-left: 0;
+
+#img3:checked~.m3 {
+    margin-left: -200%;
 }
-#img4:checked ~ .m4 {
-    margin-left: 0;
+
+#img4:checked~.m4 {
+    margin-left: -300%;
 }
-#img5:checked ~ .m5 {
-    margin-left: 0;
+
+#img5:checked~.m5 {
+    margin-left: -400%;
 }
-#img6:checked ~ .m6 {
-    margin-left: 0;
+
+#img6:checked~.m6 {
+    margin-left: -500%;
 }
-#img7:checked ~ .m7 {
-    margin-left: 0;
+
+#img7:checked~.m7 {
+    margin-left: -600%;
+}
+
+.container {
+    background: #efcead;
+    font-family: 'Righteous';
+    text-align: center;
+    font-size: 25px;
+    size-adjust: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.container .form {
+    background: rgba(0, 0, 0, 0.6);
+    width: 350px;
+    height: 450px;
+    padding: 25px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.container .form .form-label {
+    color: #efcead;
+    display: flex;
+    font-size: 12px;
+    position: relative;
+}
+
+.container .form .form-input,
+.form-textarea {
+    background: rgb(114, 64, 29);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(198, 123, 71);
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.container .form .button {
+    width: 100%;
+    outline: none;
+    background: #0f523f;
+    font-size: 10px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 2px;
+    border-radius: 50px;
+    font-family: 'Righteous';
+}
+
+.container .form .button:hover {
+    background: #3aa959;
+}
+
+.container .form .opt {
+    width: 100%;
+    background: #0f523f;
+    font-size: 10px;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2px;
+    border-radius: 50px;
+    font-family: 'Righteous';
+}
+
+.final {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    background: rgba(224, 216, 216, 0.6);
+    display: flex;
+    font-family: 'Roboto';
+    text-align: center;
+    size-adjust: auto;
+}
+
+@media (max-width: 960px) {
+    header nav {
+        display: none;
+    }
+
+    label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        color: brown;
+        transition: 0.3s;
+        transition-property: color;
+        justify-items: right;
+    }
+
+    label:hover {
+        color: #fff;
+    }
+
+    label .close-btn {
+        display: none;
+    }
+
+    #check:checked~header nav {
+        z-index: 2;
+        position: fixed;
+        background: rgba(142, 107, 73, 0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked~header nav a {
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+
+    #check:checked~header label .menu-btn {
+        display: none;
+    }
+
+    #check:checked~header label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .menu-btn {
+        
+    }
+
+    .content p {
+        background: rgba(142, 107, 73, 0.5);
+        font-size: 20px;
+    }
 }
