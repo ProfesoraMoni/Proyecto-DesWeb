@@ -17,7 +17,6 @@ header {
     height: 620px;
     background: url(./background2.png)no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .log {
@@ -76,7 +75,7 @@ header ul li a.active {
     transform: scale(1.5);
 }
 
-label {
+#ms{
     display: none;
 }
 
@@ -126,7 +125,7 @@ header .info p {
 main {
     position: relative;
     width: 80%;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 120px;
 }
 main h2 {
     color: brown;
@@ -145,6 +144,7 @@ main .contjuego {
 main .whys {
     width: 70%;
     height: auto;
+    margin-left: 120px;
 }
 
 main li {
@@ -200,24 +200,23 @@ main li {
 .slider {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 500px;
     background: url(./b2s.png)no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .slider h2 {
     color: #eedcc8;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 2px;
     line-height: 120px;
 }
 
 .images {
-    margin-left: 250px;
+    margin-left: 350px;
     display: flex;
-    width: 120vh;
+    width: 86vh;
     position: relative;
     overflow: hidden;
 }
@@ -376,7 +375,7 @@ main li {
         display: none;
     }
 
-    label {
+    #ms {
         display: block;
         font-size: 25px;
         cursor: pointer;
@@ -456,6 +455,7 @@ main li {
     main .whys {
         width: 100%;
         height: auto;
+        margin-left: 0;
     }
     
     main li {
